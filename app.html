@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkWeb Monitoring System</title>
+    <style>
+        body {
+            background: url('abstract-digital-grid-black-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+	h1 {text-align: center;
+	color: white;
+	}
+        #header {
+            text-align: right;
+            padding: 20px;
+        }
+
+        #vpn-toggle {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #search-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        #web-archive-button {
+            background-color: #FF0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #result-table {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Dark Web Monitoring Tool</h1>
+    <div id="header">
+        <button id="vpn-toggle" onclick="toggleVPN()">VPN is OFF</button>
+    </div>
+
+    <div id="search-container">
+        <h2>DarkWeb Search</h2>
+        <input type="text" id="keywords" placeholder="Enter keywords...">
+        <input type="submit" value="Search" onclick="searchDarkWeb()">
+        <button id="web-archive-button" onclick="webArchive()">Web Archive</button>
+    </div>
+
+    <div id="result-table">
+        <h2>Search Results</h2>
+        <table>
+            <tr>
+                <th>URL</th>
+                <th>IP Address</th>
+                <th>Host</th>
+                <th>Website Type</th>
+                <th>MAC Address</th>
+                <th>Owner Name</th>
+                <th>Last Update</th>
+            </tr>
+            <!-- Result rows will be added here dynamically -->
+        </table>
+    </div>
+
+    <script>
+        function toggleVPN() {
+            var vpnToggle = document.getElementById("vpn-toggle");
+            if (vpnToggle.innerHTML === "VPN is OFF") {
+                vpnToggle.innerHTML = "VPN is ON";
+                // Add logic to turn on VPN
+            } else {
+                vpnToggle.innerHTML = "VPN is OFF";
+                // Add logic to turn off VPN
+            }
+        }
+
+        function searchDarkWeb() {
+            // Add logic to perform the dark web search
+            // Update the result table dynamically
+        }
+
+        function webArchive() {
+            // Add logic to perform actions when the Web Archive button is clicked
+        }
+    </script>
+
+</body>
+</html>
